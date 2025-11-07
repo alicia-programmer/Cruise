@@ -1,0 +1,358 @@
+/* --------------------------- */
+/*         MAIN CONTENT        */
+/*        HERO SECTION         */
+.hero_container {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+}
+.hero_frame {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+}
+.hero_item {
+  grid-area: 2 / 2 / 7 / 6;
+  padding: 10% 10% 10% 0;
+}
+.hero_item h2 {
+  margin: 0 0 30px;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+.hero_item p {
+  margin: 0 0 40px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+.hero_item a {
+  font-weight: lighter;
+  margin: 0 0 20px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+.hero_item-2 {
+  grid-area: 2 / 6 / 7 / 10;
+}
+
+/* Automatic and manual slider */
+.hero_sliders {
+  font-family: monospace;
+  width: 630px;
+  max-width: 100vw;
+  height: 580px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.hero_date {
+  position: absolute;
+  left: 0;
+  background: #004687;
+  display: flex;
+  flex-direction: column;
+  padding: 1% 3%;
+  color: #fff;
+  display: block;
+  z-index: 20;
+  border-radius: 10px 0 10px 0;
+}
+.hero_list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  display: flex;
+  width: max-content;
+  transition: 1s;
+}
+.hero_list img {
+  width: 630px;
+  max-width: 100vw;
+  height: 580px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.hero_buttons {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.hero_buttons button {
+  cursor: pointer;
+  width: 50px;
+  height: 90px;
+  background-color: #fff8;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+/* -------------------------- */
+/*          Booking           */
+.booking_container {
+  background: #004687;
+  padding: 3% 0;
+  display: flex;
+  align-items: flex-end;
+}
+.booking_frame {
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+}
+.booking_text {
+}
+.booking_content {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.booking_content p {
+  width: 95%;
+  margin: 2% 0 5%;
+  font-weight: 500;
+}
+.booking_content .booking_btn {
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.booking_content .booking_btn a {
+  color: #000;
+  padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.booking_content .booking_btn a:last-child {
+  background: olive;
+  color: #fff;
+}
+.booking_anchor {
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 15px 30px;
+  width: 55%;
+  text-align: center;
+  background: yellow;
+}
+.booking_anchor a {
+  /* color: #fff; */
+  font-size: 18px;
+}
+.countdown {
+  padding: 2% 3%;
+  width: 620px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.countdown p {
+  font-weight: bolder;
+  font-size: 30px;
+  color: yellow;
+}
+/* -------------------------- */
+/*           ABOUT            */
+.about_container {
+  height: 30vh;
+  background-image: linear-gradient(#00000055),
+    url("/assets/images/cruise_cabins2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_frame {
+  color: #fff;
+}
+.about_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about_text {
+  width: 60%;
+}
+.about_content p {
+  width: 97%;
+  font-weight: 500;
+}
+.about_content .about_btn {
+  background-color: #004687;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 170px;
+  border-radius: 4px;
+}
+.about_content .about_btn a {
+  color: #fff;
+  margin-right: 10px;
+}
+/* --------------------------- */
+/*           SLIDER            */
+.section {
+  padding: 7% 0 4%;
+  height: 110vh;
+}
+.slider_frame {
+}
+.slider_heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6%;
+}
+.slider_heading p {
+  width: 50%;
+  text-align: center;
+  margin: 1% 2%;
+}
+.heading_btn {
+  background-color: #004687;
+  color: #fff;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider_heading a {
+  color: #fff;
+  text-decoration: none;
+}
+.slider_content {
+  display: flex;
+  justify-content: center;
+}
+.slider {
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+}
+.slider .cards {
+  position: absolute;
+  background: #fff;
+  height: 500px;
+  width: 450px;
+  border-radius: 15px;
+  transition: transform 0.6s ease, opacity 0.6s ease, z-index 0.6s;
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+}
+.slider .cards img {
+  width: 100%;
+  height: 340px;
+  border-radius: 15px 15px 0 0;
+}
+.card_info {
+  padding: 15px 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card_info .learn_more {
+  display: flex;
+  align-items: center;
+  color: orange;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.slider .cards h3 {
+  font-size: 20px;
+}
+.slider .cards p {
+  margin: 1% 0 3%;
+  width: 85%;
+}
+.slider .card_info a {
+  text-decoration: none;
+  color: orange;
+  font-size: small;
+  font-weight: bolder;
+  padding: 5px 10px 5px 0;
+  transition: 0.3s;
+}
+.learn_more:hover,
+.learn_more:hover a {
+  color: #004687;
+}
+.controls {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.controls button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #004687;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.controls button:hover {
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* -----------------------------------------*/
+/* Style for grid inline pic and paragraph  */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+.item-1 {
+  grid-area: 2 / 2 / 7 / 6;
+  padding: 10% 10% 10% 0;
+}
+.item-1 h2 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+.item-1 p {
+  margin: 30px 0 40px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+.item-1 a {
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+.item-2 {
+  grid-area: 2 / 6 / 7 / 10;
+}
+.item-2 img {
+  width: 100%;
+  height: 100%;
+}

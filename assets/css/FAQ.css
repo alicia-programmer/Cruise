@@ -1,0 +1,41 @@
+/* Dropdown button style */
+.content_container {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+.content_frame {
+  width: 100%;
+}
+.content_item {
+  display: flex;
+  justify-content: center;
+}
+.button_dropdown {
+  margin: 15px 20px 30px;
+}
+.button_dropdown button {
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+  text-align: left;
+  width: 600px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+}
+.button_dropdown .bx-chevrons-down {
+  float: inline-end;
+  font-size: 35px;
+  cursor: pointer;
+}
+.drop_content {
+  width: 500px;
+  margin: auto;
+  display: none;
+}
+.drop_content p {
+  padding: 20px 0;
+}

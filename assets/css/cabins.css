@@ -1,0 +1,96 @@
+/*        HERO SECTION         */
+.about_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_frame {
+}
+.links {
+  margin-top: 5%;
+}
+.links span {
+  color: #004687;
+}
+.about_content {
+  padding: 5% 0;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+.swap_content .about_text {
+  grid-area: 2 / 6 / 7 / 10;
+  padding: 0 10% 10% 0;
+}
+.swap_content .about_img {
+  grid-area: 1 / 1 / 7 / 5;
+}
+.about_text {
+  grid-area: 1 / 1 / 7 / 6;
+  padding: 0 10% 10% 0;
+}
+.about_text h2 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+}
+.about_text p {
+  margin: 15px 0 30px;
+  line-height: 27px;
+  font-weight: lighter;
+}
+.about_text a {
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+.about_img {
+  grid-area: 1 / 6 / 7 / 10;
+}
+.about_img img {
+  width: 120%;
+  height: auto;
+}
+.about_details {
+  padding: 7% 0 0;
+  border-top: 1px solid grey;
+}
+.about_details span {
+  font-weight: bold;
+}
+.about_details h3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+.about_price {
+  margin-bottom: 30px;
+}
+.about_size {
+}
+.about_details ul {
+  margin-top: 6%;
+  margin-left: 7%;
+  font-size: 15px;
+}
+.about_details li {
+  margin-top: 8px;
+}
+.about_anchors {
+  margin-top: 25px;
+}
+.about_anchors a {
+  color: #fff;
+  padding: 9px 20px;
+  background-color: #004687;
+  /* border-radius: 4px; */
+  font-weight: 500;
+}
+.about_note {
+  color: #fff;
+  border-radius: 0 10px 0 10px;
+  background: #004687;
+  padding: 12px 12px;
+  font-style: italic;
+}
