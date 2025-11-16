@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontShare -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=switzer@400,900&f[]=supreme@400,401&f[]=satoshi@400,401&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/event.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <title>Cruising Uniquely So | Home</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_links widthContainer">
+        <div class="logo">
+          <a href="index.html"><h2>Cruising Uniquely So</h2></a>
+        </div>
+        <div class="nav">
+          <div class="sideContent">
+            <span onclick="slideIn()" class="openbtn"
+              ><i class="bx bx-menu-alt-right"></i
+            ></span>
+          </div>
+          <div class="menu" id="menu">
+            <span class="closebtn" onclick="slideOut()"
+              ><i class="bx bx-x"></i
+            ></span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cabins.html">Cabins</a>
+            <a href="#">Booking</a>
+            <a href="event.html">Events</a>
+            <a href="howToBook.html">How to book</a>
+            <a href="FAQ.html">FAQ's</a>
+            <a href="sponsorships.html">Brand Sponsorship Opportunities</a>
+            <div class="page_links">
+              <a href="javascript:void(0)"
+                ><i class="bx bxs-user-circle"></i
+              ></a>
+              <a href="javascript:void(0)"><i class="bx bxl-twitter"></i></a>
+              <a href="javascript:void(0)" style="font-size: 25px"
+                ><i class="bx bx-shopping-bag"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainContent" id="main">
+      <!-- Book -->
+      <div class="booking_container">
+        <div class="booking_frame widthContainer">
+          <h3><big>Countdown</big> to Cruising Uniquely So 2026:</h3>
+          <div class="countdown fade-in-up delay-3" aria-live="polite">
+            <div class="cd-item">
+              <span id="cd-days">--</span><small>Days</small>
+            </div>
+            <div class="cd-item">
+              <span id="cd-hours">--</span><small>Hours</small>
+            </div>
+            <div class="cd-item">
+              <span id="cd-mins">--</span><small>Minutes</small>
+            </div>
+            <div class="cd-item">
+              <span id="cd-secs">--</span><small>Seconds</small>
+            </div>
+          </div>
+          <div class="booking_content">
+            <!-- <div class="booking_text">
+              <h2>Cruise cabins</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                sequi perspiciatis accusantium laudantium culpa ipsa illo
+                mollitia porro reprehenderit nesciunt incidunt soluta excepturi,
+                totam quasi eveniet cupiditate expedita nemo. Accusantium?
+              </p>
+            </div> -->
+            <div class="booking_btn">
+              <a href="#">Book you place</a>
+              <a href="#">Pre-register for 2026</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cabins -->
+      <div class="hero_container">
+        <div class="hero_frame widthContainer">
+          <div class="hero_text">
+            <div class="hero_item">
+              <div class="container features">
+                <a href="#">Book Now</a>
+                <a href="#">View Cabins</a>
+                <h2 class="fade-in-up">What the Cruise Includes</h2>
+                <ul class="grid includes">
+                  <li>
+                    Accommodation aboard MSC Cruises (Inside, Ocean View,
+                    Balcony, Suite)
+                  </li>
+                  <li>All meals (buffet & à la carte)</li>
+                  <li>Entertainment (live shows, music, themed parties)</li>
+                  <li>Pools, gym, and onboard activities</li>
+                  <li>Port taxes and cruise fees</li>
+                </ul>
+
+                <div class="program fade-in-up">
+                  <h3>Proposed Programme</h3>
+                  <div class="timeline">
+                    <div class="day">
+                      <h4>Thursday – 27 Nov</h4>
+                      <p>
+                        08:00 – Depart from Pretoria to Durban (Convoy)<br />Check-in
+                        at Durban accommodation<br />Cruise Pre-Party 🎉
+                      </p>
+                    </div>
+                    <div class="day">
+                      <h4>Friday – 28 Nov</h4>
+                      <p>
+                        Check-out and embark MSC Cruise<br />Onboarding Pool
+                        Party – Paradise Vibes
+                      </p>
+                    </div>
+                    <div class="day">
+                      <h4>Saturday – 29 Nov</h4>
+                      <p>
+                        06:00–08:00 – Yoga / Aerobics<br />11:00 – Hawaiian
+                        Party on Portuguese Island 🌺<br />After Dinner – Come
+                        As Your Type Disco Night
+                      </p>
+                    </div>
+                    <div class="day">
+                      <h4>Sunday – 30 Nov</h4>
+                      <p>
+                        Morning – Church Service (Theatre)<br />Midday – Netflix
+                        & Chill in PJs<br />Evening – Red Carpet to Theatre<br />Masquerade
+                        Suit & Sneakers Show 🎭<br />Final Dance Off – Last
+                        Supper (abo Judas)
+                      </p>
+                    </div>
+                    <div class="day">
+                      <h4>Monday – 1 Dec</h4>
+                      <p>Check-out and convoy back home</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero_sliders hero_item-2" id="slider1">
+              <div class="hero_date">
+                <p style="font-weight: bold">27–30 November 2026</p>
+                <p>Durban → Portuguese Island → Durban</p>
+              </div>
+              <div class="about_img">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="assets/images/cruise_cabins2.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="assets/images/cruise_cabins3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="assets/images/cruise_cabins.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 7</div>
+                  <img src="assets/images/cruise5.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 7</div>
+                  <img src="assets/images/cruise4.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 7</div>
+                  <img src="assets/images/cruise3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 7</div>
+                  <img src="assets/images/cruise.png" />
+                </div>
+
+                <!-- Image row -->
+                <div class="slider_wrap">
+                  <div class="row">
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins2.png"
+                        onclick="currentSlide(1, 'slider4')"
+                        alt="The Woods"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins3.png"
+                        onclick="currentSlide(2, 'slider4')"
+                        alt="Cinque Terre"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins.png"
+                        onclick="currentSlide(3, 'slider4')"
+                        alt="Mountains and fjords"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise5.png"
+                        onclick="currentSlide(4, 'slider4')"
+                        alt="Northern Lights"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise4.png"
+                        onclick="currentSlide(5, 'slider4')"
+                        alt="Nature and sunrise"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise3.png"
+                        onclick="currentSlide(6, 'slider4')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise.png"
+                        onclick="currentSlide(7, 'slider4')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                  </div>
+                  <div class="btn_area">
+                    <button
+                      type="button"
+                      class="slider_btn btn_one"
+                      onclick="plusSlides(-1, 'slider4')"
+                    >
+                      ❮
+                    </button>
+                    <button
+                      type="button"
+                      class="slider_btn btn_two"
+                      onclick="plusSlides(1, 'slider4')"
+                    >
+                      ❯
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subscribe -->
+      <section class="subscribe_section">
+        <div class="widthContainer subscribe">
+          <div class="subscribe_content">
+            <div class="sub_text">
+              <h2 class="gradient">Subscribe</h2>
+              <p class="lead">Join our mailing list to get the latest news.</p>
+            </div>
+            <form class="form subscribe-form" id="subscribe-form">
+              <div class="form-grid">
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+                <div>
+                  <button type="submit" class="btn btn-primary">
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <div class="footer_container">
+      <div class="footer_frame widthContainer">
+        <div class="footer_content">
+          <div class="footer_copyright">
+            <p>
+              Copyright @
+              <a href="index.html">
+                <small class="logo"><span>Cabin</span>Cruise</small>
+              </a>
+              2025
+            </p>
+          </div>
+          <div class="footer_items">
+            <a href="javascript:void(0)">Privacy policy</a>
+            <a href="javascript:void(0)">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/event.js"></script>
+  </body>
+</html>

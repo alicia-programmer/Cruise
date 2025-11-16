@@ -10,7 +10,7 @@
     />
     <!-- FontShare -->
     <link
-      href="https://api.fontshare.com/v2/css?f[]=switzer@300,900&f[]=supreme@400,401&f[]=satoshi@400,401&display=swap"
+      href="https://api.fontshare.com/v2/css?f[]=switzer@400,900&f[]=supreme@400,401&f[]=satoshi@400,401&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -21,77 +21,83 @@
     <div class="navbar">
       <div class="navbar_links widthContainer">
         <div class="logo">
-          <a href="index.html"><h1>Cruises</h1></a>
+          <a href="index.html"><h2>Cruising Uniquely So</h2></a>
         </div>
         <div class="nav">
-          <div class="">
-            <a href="index.html">Home</a>
+          <div class="sideContent">
+            <span onclick="slideIn()" class="openbtn"
+              ><i class="bx bx-menu-alt-right"></i
+            ></span>
           </div>
-          <!-- <div class="sub_menu">
-            <a href="#">Night gowns</a>
-            <a href="#">Dresses</a>
-            <a href="#">Heels</a>
-            <a href="#">Jeans</a>
-            <a href="#">Sunglasses</a>
-          </div> -->
-          <a href="about.html">About</a>
-          <a href="#">Booking</a>
-          <a href="#">Events</a>
-          <a href="cabins.html">Cabins</a>
-          <a href="FAQ.html">FAQ's</a>
-          <a href="#">Brand Sponsorship Opportunities</a>
-        </div>
-        <div class="page_links">
-          <a href="javascript:void(0)"><i class="bx bxs-user-circle"></i></a>
-          <a href="javascript:void(0)"><i class="bx bxl-twitter"></i></a>
-          <a href="javascript:void(0)" style="font-size: 25px"
-            ><i class="bx bx-shopping-bag"></i
-          ></a>
+          <div class="menu" id="menu">
+            <span class="closebtn" onclick="slideOut()"
+              ><i class="bx bx-x"></i
+            ></span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cabins.html">Cabins</a>
+            <a href="#">Booking</a>
+            <a href="event.html">Events</a>
+            <a href="howToBook.html">How to book</a>
+            <a href="FAQ.html">FAQ's</a>
+            <a href="sponsorships.html">Brand Sponsorship Opportunities</a>
+            <div class="page_links">
+              <a href="javascript:void(0)"
+                ><i class="bx bxs-user-circle"></i
+              ></a>
+              <a href="javascript:void(0)"><i class="bx bxl-twitter"></i></a>
+              <a href="javascript:void(0)" style="font-size: 25px"
+                ><i class="bx bx-shopping-bag"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="mainContent">
+    <div class="mainContent" id="main">
       <!-- Cabins -->
       <div class="hero_container">
-        <div class="hero_frame">
-          <div class="hero_item">
-            <h2>Cruising Uniquely So!</h2>
-            <p>
-              Lorem ipsum dolor sit amet sit amet consectetur neque dfs dsffs
-              iure animi consequatur examet delectus reprehenderit cupiditate,
-              odit, ipsa voluptate pehsaufsdfdsfiuh sd fuihfuis dfuidfdsu
-              ifsduifrferendis impedit quidem officia porro dolorum minus
-              voluptatem saepe placeat! Ad corporis consectetur nesciunt.
-            </p>
-            <a href="#">About Cruising Uniquely So>> </a>
-          </div>
+        <div class="hero_frame widthContainer">
+          <div class="hero_text">
+            <div class="hero_item">
+              <h1 class="hero-title fade-in-up">
+                The ultimate ocean experience celebrating <br />
+                <span class="gradient">your uniqueness</span>
+              </h1>
+              <p class="lead fade-in-up delay-1">
+                Step aboard for themed parties, wellness, and unforgettable
+                memories on MSC from Durban to Portuguese Island.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
 
-          <div class="hero_sliders hero_item-2">
-            <div class="hero_date">
-              <p style="font-weight: bold">27–30 November 2026</p>
-              <p>Durban → Portuguese Island → Durban</p>
-            </div>
-            <div class="hero_list">
-              <div class="hero_items">
-                <img src="assets/images/cruise2.png" />
+            <div class="hero_sliders hero_item-2">
+              <div class="hero_date">
+                <p style="font-weight: bold">27–30 November 2026</p>
+                <p>Durban → Portuguese Island → Durban</p>
               </div>
-              <div class="hero_items">
-                <img src="assets/images/cruise.png" />
+              <div class="hero_list">
+                <div class="hero_items">
+                  <img src="assets/images/cruise2.png" />
+                </div>
+                <div class="hero_items">
+                  <img src="assets/images/cruise.png" />
+                </div>
+                <div class="hero_items">
+                  <img src="assets/images/cruise3.png" />
+                </div>
+                <div class="hero_items">
+                  <img src="assets/images/cruise4.png" />
+                </div>
+                <div class="hero_items">
+                  <img src="assets/images/cruise5.png" />
+                </div>
               </div>
-              <div class="hero_items">
-                <img src="assets/images/cruise3.png" />
+              <div class="hero_buttons">
+                <button class="" id="hero_prev"><</button>
+                <button class="" id="hero_next">></button>
               </div>
-              <div class="hero_items">
-                <img src="assets/images/cruise4.png" />
-              </div>
-              <div class="hero_items">
-                <img src="assets/images/cruise5.png" />
-              </div>
-            </div>
-            <div class="hero_buttons">
-              <button class="" id="hero_prev"><</button>
-              <button class="" id="hero_next">></button>
             </div>
           </div>
         </div>
@@ -101,7 +107,7 @@
       <div class="booking_container">
         <div class="booking_frame widthContainer">
           <div class="booking_content">
-            <div class="booking_text">
+            <!-- <div class="booking_text">
               <h2>Cruise cabins</h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
@@ -109,26 +115,53 @@
                 mollitia porro reprehenderit nesciunt incidunt soluta excepturi,
                 totam quasi eveniet cupiditate expedita nemo. Accusantium?
               </p>
-            </div>
+            </div> -->
             <div class="booking_btn">
               <a href="#">Book you place</a>
               <a href="#">Pre-register for 2026</a>
             </div>
-            <div class="booking_anchor">
-              <a href="#">Learn more</a>
-            </div>
           </div>
-          <div class="countdown">
-            <p>Countdown: 00 00 00 .00</p>
+          <h3><big>Countdown</big> to Cruising Uniquely So 2026:</h3>
+          <div class="countdown fade-in-up delay-3" aria-live="polite">
+            <div class="cd-item">
+              <span id="cd-days">--</span><small>Days</small>
+            </div>
+            <div class="cd-item">
+              <span id="cd-hours">--</span><small>Hours</small>
+            </div>
+            <div class="cd-item">
+              <span id="cd-mins">--</span><small>Minutes</small>
+            </div>
+            <div class="cd-item">
+              <span id="cd-secs">--</span><small>Seconds</small>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Deposit CTA Banner -->
+      <section class="deposit_section" id="deposit">
+        <div class="deposit_container deposit widthContainer">
+          <h2 class="fade-in-up">
+            Secure your cabin with only a
+            <span class="gradient">R1000</span> deposit!
+          </h2>
+          <p class="lead">
+            Balance payable 80 days before departure. Flexible payment plans
+            available.
+          </p>
+          <div class="cta-group">
+            <a class="deposit_btn btn-primary" href="#booking">View Cabins</a>
+            <a class="deposit_btn btn-outline" href="#faqs">Read FAQs</a>
+          </div>
+        </div>
+      </section>
 
       <!-- Slider -->
       <div class="section slider">
         <div class="slider_frame widthContainer">
           <div class="slider_heading">
-            <h1>Cruise cabins</h1>
+            <h1>Cruising Uniquely So</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
               sequi perspiciatis accusantium laudantium culpa ipsa illo mollitia
@@ -136,78 +169,64 @@
               quasi eveniet cupiditate expedita nemo. Accusantium?
             </p>
             <div class="heading_btn">
-              <a href="#">View cabins</a>
-              <i class="bx bx-right-arrow-alt"></i>
+              <a href="cabins.html">View cabins</a>
+              <!-- <i class="bx bx-right-arrow-alt"></i> -->
             </div>
           </div>
           <div class="slider_content">
             <div class="cards">
               <img src="assets/images/cruise_cabins.png" alt="" />
               <div class="card_info">
-                <h3>Slider Cards</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores, ut.
-                </p>
+                <h3>Inside Cabin</h3>
+                <p>Cozy and budget-friendly</p>
                 <div class="learn_more">
-                  <a href="#">Book cabin</a>
-                  <i class="bx bx-right-arrow-alt"></i>
+                  <a href="#"
+                    >Book cabin
+                    <!-- <i class="bx bx-right-arrow-alt"></i> -->
+                  </a>
+                  <a href="cabins.html">Learn more</a>
                 </div>
               </div>
             </div>
             <div class="cards">
               <img src="assets/images/cruise_cabins2.png" alt="" />
               <div class="card_info">
-                <h3>Slider Cards</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores, ut.
-                </p>
+                <h3>Ocean View Cabin</h3>
+                <p>Wake up to sea views</p>
                 <div class="learn_more">
-                  <a href="#">Book cabin</a>
-                  <i class="bx bx-right-arrow-alt"></i>
+                  <a href="#"
+                    >Book cabin
+                    <!-- <i class="bx bx-right-arrow-alt"></i> -->
+                  </a>
+                  <a href="cabins.html">Learn more</a>
                 </div>
               </div>
             </div>
             <div class="cards">
               <img src="assets/images/cruise_cabins3.png" alt="" />
               <div class="card_info">
-                <h3>Slider Cards</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores, ut.
-                </p>
+                <h3>Balcony Cabin</h3>
+                <p>Private outdoor space</p>
                 <div class="learn_more">
-                  <a href="#">Book cabin</a>
-                  <i class="bx bx-right-arrow-alt"></i>
-                </div>
-              </div>
-            </div>
-            <div class="cards">
-              <img src="assets/images/cruise_cabins4.png" alt="" />
-              <div class="card_info">
-                <h3>Slider Cards</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores, ut.
-                </p>
-                <div class="learn_more">
-                  <a href="#">Book cabin</a>
-                  <i class="bx bx-right-arrow-alt"></i>
+                  <a href="#"
+                    >Book cabin
+                    <!-- <i class="bx bx-right-arrow-alt"></i> -->
+                  </a>
+                  <a href="cabins.html">Learn more</a>
                 </div>
               </div>
             </div>
             <div class="cards">
               <img src="assets/images/cruise_cabins5.png" alt="" />
               <div class="card_info">
-                <h3>Slider Cards</h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores, ut.
-                </p>
+                <h3>Suite</h3>
+                <p>Ultimate luxury and comfort</p>
                 <div class="learn_more">
-                  <a href="#">Book cabin</a>
-                  <i class="bx bx-right-arrow-alt"></i>
+                  <a href="#"
+                    >Book cabin
+                    <!-- <i class="bx bx-right-arrow-alt"></i> -->
+                  </a>
+                  <a href="cabins.html">Learn more</a>
                 </div>
               </div>
             </div>
@@ -223,33 +242,8 @@
         </div>
       </div>
 
-      <!-- Aboout -->
-      <div class="about_container">
-        <div class="about_frame">
-          <div class="about_content">
-            <div class="about_text">
-              <h2>Cruise cabins</h2>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
-                sequi perspiciatis accusantium laudantium culpa ipsa illo
-                mollitia porro reprehenderit nesciunt incidunt soluta excepturi,
-                totam quasi eveniet cupiditate expedita nemo. Accusantium?
-              </p>
-            </div>
-            <div class="about_btn">
-              <a href="#"
-                >More <br />
-                about <br />
-                us</a
-              >
-              <i class="bx bx-right-arrow-alt"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Cabins -->
-      <div class="container">
+      <!-- <div class="container">
         <div class="content widthContainer">
           <div class="item-1">
             <h2>Cruise Cabins</h2>
@@ -266,8 +260,54 @@
             <img src="assets/images/cruise_cabins2.png" />
           </div>
         </div>
+      </div> -->
+      <!-- Aboout -->
+      <div class="about_container">
+        <div class="about_frame widthContainer">
+          <div class="about_content">
+            <div class="about_text">
+              <h2>
+                <span>Cruising Uniquely So</span> is more than a cruise - it's a
+                movement. Hosted by <span>Unique KayBee Events</span>, this
+                themed experience blends <span>luxury</span> travel with
+                creative expression, <span>wellness</span>, and
+                <span>community</span>.
+              </h2>
+            </div>
+            <div class="about_btn">
+              <a href="about.html"
+                >More about us
+                <i class="bx bx-right-arrow-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Subscribe -->
+    <section class="subscribe_section">
+      <div class="widthContainer subscribe">
+        <div class="subscribe_content">
+          <div class="sub_text">
+            <h2 class="gradient">Subscribe</h2>
+            <p class="lead">Join our mailing list to get the latest news.</p>
+          </div>
+          <form class="form subscribe-form" id="subscribe-form">
+            <div class="form-grid">
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+              />
+              <div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- Footer -->
     <div class="footer_container">
       <div class="footer_frame widthContainer">
@@ -276,7 +316,7 @@
             <p>
               Copyright @
               <a href="index.html">
-                <h2 class="logo"><span>Cabin</span>Cruise</h2>
+                <small class="logo"><span>Cabin</span>Cruise</small>
               </a>
               2025
             </p>
@@ -289,5 +329,6 @@
       </div>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>

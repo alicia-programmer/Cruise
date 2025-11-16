@@ -21,271 +21,166 @@
     <div class="navbar">
       <div class="navbar_links widthContainer">
         <div class="logo">
-          <a href="index.html"><h1>Cruises</h1></a>
+          <a href="index.html"><h2>Cruising Uniquely So</h2></a>
         </div>
         <div class="nav">
-          <div class="">
-            <a href="index.html">Home</a>
+          <div class="sideContent">
+            <span onclick="slideIn()" class="openbtn"
+              ><i class="bx bx-menu-alt-right"></i
+            ></span>
           </div>
-          <!-- <div class="sub_menu">
-            <a href="#">Night gowns</a>
-            <a href="#">Dresses</a>
-            <a href="#">Heels</a>
-            <a href="#">Jeans</a>
-            <a href="#">Sunglasses</a>
-          </div> -->
-          <a href="about.html">About</a>
-          <a href="#">Booking</a>
-          <a href="#">Events</a>
-          <a href="cabins.html">Cabins</a>
-          <a href="FAQ.html">FAQ's</a>
-          <a href="#">Brand Sponsorship Opportunities</a>
-        </div>
-        <div class="page_links">
-          <a href="javascript:void(0)"><i class="bx bxs-user-circle"></i></a>
-          <a href="javascript:void(0)"><i class="bx bxl-twitter"></i></a>
-          <a href="javascript:void(0)" style="font-size: 25px"
-            ><i class="bx bx-shopping-bag"></i
-          ></a>
+          <div class="menu" id="menu">
+            <span class="closebtn" onclick="slideOut()"
+              ><i class="bx bx-x"></i
+            ></span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cabins.html">Cabins</a>
+            <a href="#">Booking</a>
+            <a href="event.html">Events</a>
+            <a href="howToBook.html">How to book</a>
+            <a href="FAQ.html">FAQ's</a>
+            <a href="sponsorships.html">Brand Sponsorship Opportunities</a>
+            <div class="page_links">
+              <a href="javascript:void(0)"
+                ><i class="bx bxs-user-circle"></i
+              ></a>
+              <a href="javascript:void(0)"><i class="bx bxl-twitter"></i></a>
+              <a href="javascript:void(0)" style="font-size: 25px"
+                ><i class="bx bx-shopping-bag"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="content_container">
-      <div class="content_frame">
-        <div class="content_item">
-          <div class="button_dropdown">
-            <button onclick="toggleFunction1()">
-              What’s included in the cruise package?
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Accommodation, meals, entertainment, port taxes, and access to
-                onboard facilities.
-              </p>
+      <div class="content_frame widthContainer">
+        <section id="faqs" class="section">
+          <div class="container">
+            <h2>FAQs</h2>
+            <br />
+            <div class="faq-list">
+              <details>
+                <summary>What’s included in the cruise package?</summary>
+                <p>
+                  Accommodation, meals, entertainment, port taxes, and access to
+                  onboard facilities.
+                </p>
+              </details>
+              <details>
+                <summary>Do I need a passport?</summary>
+                <p>
+                  Yes, a valid passport is required for cross border &
+                  international travel.
+                </p>
+              </details>
+              <details>
+                <summary>Is transport to Durban included?</summary>
+                <p>
+                  Not included in the price but available upon request for an
+                  additional amount.
+                </p>
+              </details>
+              <details>
+                <summary>Can I choose my cabin?</summary>
+                <p>Yes, based on availability and budget.</p>
+              </details>
+              <details>
+                <summary>Are themed parties mandatory?</summary>
+                <p>No, but they're highly recommended for fun!</p>
+              </details>
+              <details>
+                <summary>Is there a payment plan?</summary>
+                <p>Yes, flexible payment options are available.</p>
+              </details>
+              <details>
+                <summary>Any age restrictions?</summary>
+                <p>Guests must be above 18 years of age to attend.</p>
+              </details>
+              <details>
+                <summary>
+                  Can I book with friends and keep cabins close?
+                </summary>
+                <p>
+                  Yes, request adjacent cabins during booking; subject to
+                  availability.
+                </p>
+              </details>
+              <details>
+                <summary>What are the themes on the cruise?</summary>
+                <p>
+                  Netflix & Chill (PJs), Hawaiian Party, Poolside Paradise,
+                  Masquerade Suits & Sneakers, Hollywood Glamour, Come As Your
+                  Type (disco).
+                </p>
+              </details>
+              <details>
+                <summary>What payment options are available onboard?</summary>
+                <p>
+                  Cashless system with a cruise card; settle at end by cash or
+                  card.
+                </p>
+              </details>
+              <details>
+                <summary>Is Wi‑Fi available onboard?</summary>
+                <p>
+                  Yes, Wi‑Fi packages are available for purchase. Signal may
+                  vary at sea.
+                </p>
+              </details>
+              <details>
+                <summary>How does Embarkation & Disembarkation work?</summary>
+                <p>
+                  Embark at Durban Cruise Terminal (KCT) at your stated time
+                  with passport and printed ticket. Disembark on final morning;
+                  follow assigned groups and immigration/customs instructions.
+                </p>
+              </details>
+              <details>
+                <summary>What if I need to cancel?</summary>
+                <p>
+                  Cancellations follow our policy. You may find a replacement
+                  (25% replacement fee applies). Deposits are non‑refundable but
+                  transferable with a fee.
+                </p>
+              </details>
+              <details>
+                <summary>What if I want to travel alone?</summary>
+                <p>
+                  Share with a matched traveller (same gender) or pay a single
+                  supplement for your own cabin.
+                </p>
+              </details>
+              <details>
+                <summary>Group of three?</summary>
+                <p>
+                  3/4 sleeper cabins may be available. Contact us for options
+                  and pricing.
+                </p>
+              </details>
+              <details>
+                <summary>Non‑South African citizens?</summary>
+                <p>
+                  Welcome! Ensure you meet your country’s travel requirements
+                  and be in South Africa for departure.
+                </p>
+              </details>
             </div>
+            <br />
+            <p class="ext">
+              Cannot find your question? <a href="#contact">Contact us</a> or
+              see
+              <a
+                href="https://www.msccruises.co.za/faq"
+                target="_blank"
+                rel="noopener"
+                >MSC FAQs</a
+              >.
+            </p>
           </div>
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              Do I need a passport? <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Yes, a valid passport is required for cross border &
-                international travel.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="content_item">
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              Is transport to Durban included?
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Not included in the price but available upon request for an
-                additional amount
-              </p>
-            </div>
-          </div>
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              Can I choose my cabin? <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>Yes, based on availability and budget.</p>
-            </div>
-          </div>
-        </div>
-        <div class="content_item">
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              Are themed parties mandatory? <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Not at all! They're optional but highly recommended for fun.
-              </p>
-            </div>
-          </div>
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              Is there a payment plan? <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>Yes, flexible payment options are available.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="content_item">
-          <div class="button_dropdown">
-            <button onclick="toggleFunction1()">
-              Are there any age restrictions
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>Guest must be above 18 years of age to attend</p>
-            </div>
-          </div>
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              Can I book with friends to ensure our cabins are close together?
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Absolutely! When booking as a group, simply request adjacent
-                cabins during your reservation. We'll do our best to accommodate
-                your request — subject to availability.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="content_item">
-          <div class="button_dropdown">
-            <button onclick="toggleFunction1()">
-              What are the themes on the cruise
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Netflix and Chill in PJ's while cruising, Hawaiian Party by the
-                island, Poolside Paradise, Masquerade at Theatre - Suits and
-                Sneakers (have a show - performance - real acting), Hollywood
-                Glamour (Red carpet vibes), Come as your type (dress up ) -
-                disco area
-              </p>
-            </div>
-          </div>
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              What payment options are available onboard?
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                The cruise operates on a cashless system. You'll receive a
-                cruise card that allows you to charge all onboard purchases to
-                your account. At the end of your trip, you can settle your
-                balance using cash or card.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="content_item">
-          <div class="button_dropdown">
-            <button onclick="toggleFunction1()">
-              Is Wi-Fi available onboard?
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Yes, Wi-Fi packages are available for purchase. Please note that
-                signal strength and coverage may vary while the ship is at sea.
-              </p>
-            </div>
-          </div>
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              How does the process of Embarkation & Disembarkation work
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Embarkation takes place at the Durban Cruise Terminal (KCT –
-                KwaZulu Natal Cruise Terminal). Your check-in time will be
-                clearly stated on your cruise ticket — please arrive only during
-                your allocated time to avoid delays.
-                 <br />
-                To board, you’ll need: 
-                <br />
-                A valid passport (with at least 6 months’ validity), Your
-                printed cruise ticket 
-                <br />
-                Disembarkation happens on the final morning upon return to
-                Durban, typically between 06h00 and 09h00 on Monday. To ensure a
-                smooth process, guests are assigned disembarkation groups, and
-                instructions will be placed in your cabin the night before
-                arrival.
-                <br>
-                Before exiting the terminal, all guests must:
-                <ul>
-                    <li>Clear customs, Present their passport to South African immigration authorities </li>
-                </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="content_item">
-          <div class="button_dropdown">
-            <button onclick="toggleFunction1()">
-              What if I need to cancel my booking?
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                You’re welcome to cancel your booking, but please note that all
-                cancellations are subject to our Cancellation Policy.
-                <br />
-                If you're unable to attend, we recommend finding a replacement
-                to take your spot — this often helps avoid higher cancellation
-                costs. A 25% replacement fee will apply,
-                <br />
-                We understand that unexpected situations can arise, but we are
-                obligated to follow our Cancellation Policy at all times.
-              </p>
-            </div>
-          </div>
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              What if I want to travel alone? <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                 We welcome solo travelers and offer two flexible options:
-                 <ol>
-                    <li>Willing to Share? 
-                        If you're open to sharing, we’ll try to match you with another solo traveler of the same 
-                        gender. With mutual agreement, you can share a cabin — and your tour price stays the 
-                        same. 
-                    </li>
-                    <li>
-                        Prefer Your Own Space? 
-                    </li>
-                </ol>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="content_item">
-          <div class="button_dropdown">
-            <button onclick="toggleFunction1()">
-              What’s included in the cruise package?
-              <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Accommodation, meals, entertainment, port taxes, and access to
-                onboard facilities.
-              </p>
-            </div>
-          </div>
-          <div class="button_dropdown">
-            <button onclick="toggleFunction()">
-              Do I need a passport? <i class="bx bx-chevrons-down"></i>
-            </button>
-            <div class="drop_content" id="drop_content">
-              <p>
-                Yes, a valid passport is required for cross border &
-                international travel.
-              </p>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
 
@@ -297,7 +192,7 @@
             <p>
               Copyright @
               <a href="index.html">
-                <h2 class="logo"><span>Cabin</span>Cruise</h2>
+                <small class="logo"><span>Cabin</span>Cruise</small>
               </a>
               2025
             </p>
@@ -310,5 +205,6 @@
       </div>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>

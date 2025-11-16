@@ -21,32 +21,36 @@
     <div class="navbar">
       <div class="navbar_links widthContainer">
         <div class="logo">
-          <a href="index.html"><h1>Cruises</h1></a>
+          <a href="index.html"><h2>Cruising Uniquely So</h2></a>
         </div>
         <div class="nav">
-          <div class="">
-            <a href="index.html">Home</a>
+          <div class="sideContent">
+            <span onclick="slideIn()" class="openbtn"
+              ><i class="bx bx-menu-alt-right"></i
+            ></span>
           </div>
-          <!-- <div class="sub_menu">
-            <a href="#">Night gowns</a>
-            <a href="#">Dresses</a>
-            <a href="#">Heels</a>
-            <a href="#">Jeans</a>
-            <a href="#">Sunglasses</a>
-          </div> -->
-          <a href="about.html">About</a>
-          <a href="#">Booking</a>
-          <a href="#">Events</a>
-          <a href="cabins.html">Cabins</a>
-          <a href="FAQ.html">FAQ's</a>
-          <a href="#">Brand Sponsorship Opportunities</a>
-        </div>
-        <div class="page_links">
-          <a href="javascript:void(0)"><i class="bx bxs-user-circle"></i></a>
-          <a href="javascript:void(0)"><i class="bx bxl-twitter"></i></a>
-          <a href="javascript:void(0)" style="font-size: 25px"
-            ><i class="bx bx-shopping-bag"></i
-          ></a>
+          <div class="menu" id="menu">
+            <span class="closebtn" onclick="slideOut()"
+              ><i class="bx bx-x"></i
+            ></span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cabins.html">Cabins</a>
+            <a href="#">Booking</a>
+            <a href="event.html">Events</a>
+            <a href="howToBook.html">How to book</a>
+            <a href="FAQ.html">FAQ's</a>
+            <a href="sponsorships.html">Brand Sponsorship Opportunities</a>
+            <div class="page_links">
+              <a href="javascript:void(0)"
+                ><i class="bx bxs-user-circle"></i
+              ></a>
+              <a href="javascript:void(0)"><i class="bx bxl-twitter"></i></a>
+              <a href="javascript:void(0)" style="font-size: 25px"
+                ><i class="bx bx-shopping-bag"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -54,15 +58,33 @@
     <div class="mainContainer">
       <div class="about_container">
         <div class="about_frame widthContainer">
-          <div class="links">
+          <!-- <div class="links">
             <a href="index.html">Home</a> > <span>Cabins</span>
+          </div> -->
+          <div class="content_links">
+            <a
+              onclick="showSection('section1', this)"
+              class="tablinks"
+              id="active"
+              >Inside Cabin</a
+            >
+            <a onclick="showSection('section2', this)" class="tablinks"
+              >Ocean View Cabin</a
+            >
+            <a onclick="showSection('section3', this)" class="tablinks"
+              >Balcony Cabin</a
+            >
+            <a onclick="showSection('section4', this)" class="tablinks"
+              >Suite</a
+            >
           </div>
-          <div class="about_content">
+          <div class="about_content active" id="section1">
             <div class="about_text">
               <h2>Inside Cabin</h2>
               <small>Cozy and budget-friendly </small>
               <div class="about_anchors">
-                <a href="#">Book Cabin ></a>
+                <a href="#">Book Cabin</a>
+                <a href="#">View Layout</a>
               </div>
               <br /><br />
               <div class="about_details">
@@ -117,16 +139,130 @@
               </div>
             </div>
             <div class="about_img">
-              <img src="assets/images/cruise_cabins.png" />
+              <div class="hero_sliders" id="slider1">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="assets/images/cruise_cabins2.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="assets/images/cruise_cabins3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="assets/images/cruise_cabins.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 7</div>
+                  <img src="assets/images/cruise5.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 7</div>
+                  <img src="assets/images/cruise4.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 7</div>
+                  <img src="assets/images/cruise3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 7</div>
+                  <img src="assets/images/cruise.png" />
+                </div>
+
+                <!-- Image row -->
+                <div class="slider_wrap">
+                  <div class="row">
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins2.png"
+                        onclick="currentSlide(1, 'slider1')"
+                        alt="The Woods"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins3.png"
+                        onclick="currentSlide(2, 'slider1')"
+                        alt="Cinque Terre"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins.png"
+                        onclick="currentSlide(3, 'slider1')"
+                        alt="Mountains and fjords"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise5.png"
+                        onclick="currentSlide(4, 'slider1')"
+                        alt="Northern Lights"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise4.png"
+                        onclick="currentSlide(5, 'slider1')"
+                        alt="Nature and sunrise"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise3.png"
+                        onclick="currentSlide(6, 'slider1')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise.png"
+                        onclick="currentSlide(7, 'slider1')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                  </div>
+                  <div class="btn_area">
+                    <button
+                      type="button"
+                      class="slider_btn btn_one"
+                      onclick="plusSlides(-1, 'slider1')"
+                    >
+                      ❮
+                    </button>
+                    <button
+                      type="button"
+                      class="slider_btn btn_two"
+                      onclick="plusSlides(1, 'slider1')"
+                    >
+                      ❯
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="about_content swap_content">
+          <div class="about_content" id="section2">
             <div class="about_text">
               <h2>Ocean View Cabin</h2>
-              <small> Wake up to sea views</small>
+              <small>Wake up to sea views</small>
               <div class="about_anchors">
-                <a href="#">Book Cabin ></a>
+                <a href="#">Book Cabin</a>
+                <a href="#">View Layout</a>
               </div>
               <br /><br />
               <div class="about_details">
@@ -180,16 +316,130 @@
               </div>
             </div>
             <div class="about_img">
-              <img src="assets/images/cruise_cabins2.png" />
+              <div class="hero_sliders hero_item-2" id="slider2">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="assets/images/cruise_cabins2.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="assets/images/cruise_cabins3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="assets/images/cruise_cabins.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 7</div>
+                  <img src="assets/images/cruise5.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 7</div>
+                  <img src="assets/images/cruise4.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 7</div>
+                  <img src="assets/images/cruise3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 7</div>
+                  <img src="assets/images/cruise.png" />
+                </div>
+
+                <!-- Image row -->
+                <div class="slider_wrap">
+                  <div class="row">
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins2.png"
+                        onclick="currentSlide(1, 'slider2')"
+                        alt="The Woods"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins3.png"
+                        onclick="currentSlide(2, 'slider2')"
+                        alt="Cinque Terre"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins.png"
+                        onclick="currentSlide(3, 'slider2')"
+                        alt="Mountains and fjords"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise5.png"
+                        onclick="currentSlide(4, 'slider2')"
+                        alt="Northern Lights"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise4.png"
+                        onclick="currentSlide(5, 'slider2')"
+                        alt="Nature and sunrise"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise3.png"
+                        onclick="currentSlide(6, 'slider2')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise.png"
+                        onclick="currentSlide(7, 'slider2')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                  </div>
+                  <div class="btn_area">
+                    <button
+                      type="button"
+                      class="slider_btn btn_one"
+                      onclick="plusSlides(-1, 'slider2')"
+                    >
+                      ❮
+                    </button>
+                    <button
+                      type="button"
+                      class="slider_btn btn_two"
+                      onclick="plusSlides(1, 'slider2')"
+                    >
+                      ❯
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="about_content">
+          <div class="about_content" id="section3">
             <div class="about_text">
               <h2>Balcony Cabin</h2>
               <small>Private outdoor space</small>
               <div class="about_anchors">
-                <a href="#">Book Cabin ></a>
+                <a href="#">Book Cabin</a>
+                <a href="#">View Layout</a>
               </div>
               <br /><br />
               <div class="about_details">
@@ -244,16 +494,130 @@
               </div>
             </div>
             <div class="about_img">
-              <img src="assets/images/cruise_cabins3.png" />
+              <div class="hero_sliders hero_item-2" id="slider3">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="assets/images/cruise_cabins2.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="assets/images/cruise_cabins3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="assets/images/cruise_cabins.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 7</div>
+                  <img src="assets/images/cruise5.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 7</div>
+                  <img src="assets/images/cruise4.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 7</div>
+                  <img src="assets/images/cruise3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 7</div>
+                  <img src="assets/images/cruise.png" />
+                </div>
+
+                <!-- Image row -->
+                <div class="slider_wrap">
+                  <div class="row">
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins2.png"
+                        onclick="currentSlide(1, 'slider3')"
+                        alt="The Woods"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins3.png"
+                        onclick="currentSlide(2, 'slider3')"
+                        alt="Cinque Terre"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins.png"
+                        onclick="currentSlide(3, 'slider3')"
+                        alt="Mountains and fjords"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise5.png"
+                        onclick="currentSlide(4, 'slider3')"
+                        alt="Northern Lights"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise4.png"
+                        onclick="currentSlide(5, 'slider3')"
+                        alt="Nature and sunrise"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise3.png"
+                        onclick="currentSlide(6, 'slider3')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise.png"
+                        onclick="currentSlide(7, 'slider3')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                  </div>
+                  <div class="btn_area">
+                    <button
+                      type="button"
+                      class="slider_btn btn_one"
+                      onclick="plusSlides(-1, 'slider3')"
+                    >
+                      ❮
+                    </button>
+                    <button
+                      type="button"
+                      class="slider_btn btn_two"
+                      onclick="plusSlides(1, 'slider3')"
+                    >
+                      ❯
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="about_content swap_content">
+          <div class="about_content" id="section4">
             <div class="about_text">
               <h2>Suite</h2>
-              <small> Ultimate luxury and comfort</small>
+              <small>Ultimate luxury and comfort</small>
               <div class="about_anchors">
-                <a href="#">Book Cabin ></a>
+                <a href="#">Book Cabin</a>
+                <a href="#">View Layout</a>
               </div>
               <br /><br />
               <div class="about_details">
@@ -309,7 +673,120 @@
               </div>
             </div>
             <div class="about_img">
-              <img src="assets/images/cruise_cabins5.png" />
+              <div class="hero_sliders hero_item-2" id="slider4">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 7</div>
+                  <img src="assets/images/cruise_cabins2.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">2 / 7</div>
+                  <img src="assets/images/cruise_cabins3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">3 / 7</div>
+                  <img src="assets/images/cruise_cabins.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">4 / 7</div>
+                  <img src="assets/images/cruise5.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">5 / 7</div>
+                  <img src="assets/images/cruise4.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">6 / 7</div>
+                  <img src="assets/images/cruise3.png" />
+                </div>
+
+                <div class="mySlides">
+                  <div class="numbertext">7 / 7</div>
+                  <img src="assets/images/cruise.png" />
+                </div>
+
+                <!-- Image row -->
+                <div class="slider_wrap">
+                  <div class="row">
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins2.png"
+                        onclick="currentSlide(1, 'slider4')"
+                        alt="The Woods"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins3.png"
+                        onclick="currentSlide(2, 'slider4')"
+                        alt="Cinque Terre"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise_cabins.png"
+                        onclick="currentSlide(3, 'slider4')"
+                        alt="Mountains and fjords"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise5.png"
+                        onclick="currentSlide(4, 'slider4')"
+                        alt="Northern Lights"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise4.png"
+                        onclick="currentSlide(5, 'slider4')"
+                        alt="Nature and sunrise"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise3.png"
+                        onclick="currentSlide(6, 'slider4')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                    <div class="column">
+                      <img
+                        class="demo cursor"
+                        src="assets/images/cruise.png"
+                        onclick="currentSlide(7, 'slider4')"
+                        alt="Snowy Mountains"
+                      />
+                    </div>
+                  </div>
+                  <div class="btn_area">
+                    <button
+                      type="button"
+                      class="slider_btn btn_one"
+                      onclick="plusSlides(-1, 'slider4')"
+                    >
+                      ❮
+                    </button>
+                    <button
+                      type="button"
+                      class="slider_btn btn_two"
+                      onclick="plusSlides(1, 'slider4')"
+                    >
+                      ❯
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -324,7 +801,7 @@
             <p>
               Copyright @
               <a href="index.html">
-                <h2 class="logo"><span>Cabin</span>Cruise</h2>
+                <small class="logo"><span>Cabin</span>Cruise</small>
               </a>
               2025
             </p>
@@ -336,6 +813,7 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/cabins.js"></script>
+    <script src="assets/js/navbar.js"></script>
   </body>
 </html>

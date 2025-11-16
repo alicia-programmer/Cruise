@@ -7,35 +7,67 @@
 .content_frame {
   width: 100%;
 }
-.content_item {
-  display: flex;
-  justify-content: center;
+
+.container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
 }
-.button_dropdown {
-  margin: 15px 20px 30px;
+.section {
+  padding: 64px 0;
+  background: #ffffff;
+  color: #0b1020;
 }
-.button_dropdown button {
+.section {
+  position: relative;
+}
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.section.visible::before {
+  opacity: 1;
+}
+.faq-list details {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+}
+.faq-list summary {
   cursor: pointer;
-  background: #fff;
-  border: none;
-  outline: none;
-  padding: 15px 10px;
-  text-align: left;
-  width: 600px;
-  font-size: 18px;
-  font-weight: bold;
-  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
-.button_dropdown .bx-chevrons-down {
-  float: inline-end;
-  font-size: 35px;
-  cursor: pointer;
+/* FAQ details animation */
+.faq-list details {
+  transition: all 0.3s ease;
 }
-.drop_content {
-  width: 500px;
-  margin: auto;
-  display: none;
+.faq-list details[open] {
+  /* transform: scale(1.01); */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.drop_content p {
-  padding: 20px 0;
+.faq-list summary {
+  transition: color 0.3s ease;
+}
+/* .faq-list summary:hover {
+  color: #ff690e;
+} */
+.ext {
+  /* font-size: 14px; */
+}
+.ext a {
+  color: #ff690e;
+}
+@media screen and (max-width: 500px) {
+  .ext {
+    text-align: center;
+  }
 }
